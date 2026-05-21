@@ -1,19 +1,36 @@
 import './styles/theme.css'
 import './styles/global.css'
 
+
+
 export function App() {
-    console.log('Oi');
 
     return (
-    <div>
-        <h1>Olá mundo!</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit ipsum quaerat accusamus, 
-            fuga quae ex maiores rem corporis. Voluptas numquam nihil architecto aliquid quae consectetur 
-            deleniti iusto laboriosam repellat nostrum.
-        </p>
-    </div>
+    <>
+        <div className='container'>
+            <div className='content'>
+                <section>LOGO</section>
+            </div>
+        </div>
+
+        <div className='container'>
+            <div className='content'>
+                <section>MENU</section>
+            </div>
+        </div>
+
+        <div className='container'>
+            <div className='content'>
+                <section>FORM</section>
+            </div>
+        </div>
+
+        <div className='container'>
+            <div className='content'>
+                <section>FOOTER</section>
+            </div>
+        </div>
+    </>
     );
 }
 
-export default App;
