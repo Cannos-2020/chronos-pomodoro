@@ -2,15 +2,27 @@ import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { CountDown } from './components/CountDown';
-
-import './styles/theme.css'
-import './styles/global.css'
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
 import { PlayCircleIcon } from 'lucide-react';
 import { DefaultButton } from './components/DefaultButton';
+import { Footer } from './components/Footer';
+
+import './styles/theme.css'
+import './styles/global.css'
+
 
 export function App() {
+    // Que todos os componentes que usam "numero"
+    // saibam das mudanças em seu valor
+
+    // Sempre que eu usar useState, não vou usar atribuição diretamente
+    //const [numero, setNumero] = useState(0);
+
+    //function handleClick() {
+       // setNumero(prevState => prevState + 1);
+     //  setNumero(1);
+    //}
 
     return (
     <>
@@ -49,6 +61,10 @@ export function App() {
                     <DefaultButton icon={<PlayCircleIcon/>}/>
                 </div>
             </form>
+        </Container>
+
+        <Container>
+            <Footer/>
         </Container>
     </>
     );
